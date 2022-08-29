@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Bookshelter</title>
+</head>
+<body id="main__body " class="main__body">
+	<header class="container_all header_conatiner d-flex">
+		<a class="logo_link" href="#">
+			<img class="logo_sun" src="./images/logo_sun.svg" alt="logo">
+			<img class="logo_moon" src="./images/logo_moon.svg" alt="logo">
+		</a>
+		
+		<form class="form_imput" action="">
+			<label class="search input-group">
+				<span class="search_logo_wrapper input-group-text" id="basic-addon1">
+					<img class="search_logo" src="./images/search_logo.svg" alt="search">
+				</span>
+				<input type="text" class="form-control search_input" placeholder="Search books" aria-label="Username" aria-describedby="basic-addon1">
+			</label>
+		</form>
+		
+		<button class="btn dark_mode" style="border: none;">
+			<img class="dark_mode_sun" src="./images/sun.svg" alt="dark mode">
+			<img class="dark_mode_moon" src="./images/moon.svg" alt="dark mode">
+		</button>
+	</header>
+	
+	<main class="container_all">
+		<div class="result_wrapper d-flex align-items-center">
+			<p class="result_text">Showing: <span class="result_number">0</span> Result(s)</p>
+			
+			<button class="order_btn btn btn-primary" style="background-color:#A6B0C3; border: 0;">
+				<img src="./images/order.svg" alt="order" width="24" height="24">
+				<p class="order_text">Order by newest</p>
+			</button>
+		</div>
+		
+		
+		<div class="d-flex">
+			<div class="books_left">
+				<div class="bookmark_wrapper">
+					<p class="bookmark h4">Bookmarks</p>
+					
+					<p class="bookmark_edit">If you don't like to read, you haven't found the right book</p>
+				</div>
+				
+				
+				
+				<ul class="bookmark_wrapper_list">
+					
+				</ul>
+			</div>
+			
+			<ul class="books_wrapper books_right d-flex flex-wrap gap" style="padding-top: 30px;">
+				
+			</ul>
+		</div>
+		
+		<div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+			
+			<div class="offcanvas-header">
+				<h5 class="modal_title offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5>
+				<button type="button" class="btn-close text-reset border-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			
+			
+			<div class="offcanvas-body">
+				<div class="modal__body">
+					<div class="modal__middle">
+						<img class="modal__img" src="https://picsum.photos/230/300" alt="book" width="230" height="300">
+						<p class="modal__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, dicta?</p>
+					</div>
+					
+					<div class="modal__bottom">
+						<div class="modal__author_wrapper">
+							<p class="modal__author">Author:</p> 
+							<div class="modal__atr_wrapper author">
+								<span class="modal__bottom_atr">Jamal Kasper</span> 
+								<span class="modal__bottom_atr">Author 2</span>
+							</div>
+						</div>
+						
+						<div class="modal__author_wrapper">
+							<p class="modal__author">Published:</p> 
+							<div class="modal__atr_wrapper year">
+								<span class="modal__bottom_atr">2019</span> 
+							</div>
+						</div>
+						
+						<div class="modal__author_wrapper">
+							<p class="modal__author">Publishers:</p> 
+							<div class="modal__atr_wrapper publisher">
+								<span class="modal__bottom_atr">Hollman</span> 
+							</div>
+						</div>
+						
+						<div class="modal__author_wrapper">
+							<p class="modal__author">Categories:</p> 
+							<div class="modal__atr_wrapper catergories">
+								<span class="modal__bottom_atr">Computers</span> 
+							</div>
+						</div>
+						
+						<div class="modal__author_wrapper">
+							<p class="modal__author">Pages Count:</p> 
+							<div class="modal__atr_wrapper page">
+								<span class="modal__bottom_atr">346</span> 
+							</div>
+						</div>
+					</div>
+					
+					<div class="modal__end">
+						<a target="_blank" class="modal__read_btn btn btn-secondary">
+							Read
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+	
+</main>
+
+
+<template id="books_template">
+	<li class="card book_card" style="width: 272px;">
+		<img class="book_img_temp" src="https://picsum.photos" alt="book">
+		<div class="card-body d-flex flex-wrap">
+			<div class="text__wrapper">
+				<p class="book_title_temp">Python</p>
+				<p class="book_author_temp book_author">David M. Beazley</p>
+				<p class="book_year_temp book_author ">2009</p>
+			</div>
+			<div class="btn__wrapper">
+				<div class="btn_wrapper d-flex">
+					<button class="bookmark_btn_temp btn btn-warning" type="button" style="width: 120px; margin-right: 6px; margin-bottom: 5px;">Bookmark</button>
+					
+					<button class="moreinfo_btn_temp btn btn-light border-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" style="width: 120px; margin-bottom: 5px;">More Info</button>
+				</div>
+				
+				<a class="readmore_btn_temp btn" href="#" style="background-color: #75828A; width: 240px; margin-bottom: 10px;">Read</a>
+			</div>
+		</div>
+	</li>
+</template>
+
+<template id="bookmark_template">
+	<li class="saved_bookmarks saved d-flex">
+		<div class="saved_books_info">
+			<p class="bookmarks_title">Python</p>
+			<p class="bookmarks_author">David M. Beazley</p>
+		</div>
+		
+		<div class="bookmarks_read saved_books_edit">
+			<a href="#" class="btn saved_books_edit_btn">
+				<img src="./images/book_logo.svg" alt="read more">
+			</a>
+			
+			<button class="bookmarks_delete btn saved_books_edit_btn">
+				<img class="bookmarks_del_img" src="./images/delete.svg" alt="delete book">
+			</button>
+		</div>
+	</li>
+</template>
+
+
+
+
+
+<script src=".//js/main.js"></script>
+<script src="./js/bootstrap.js"></script>
+</body>
+</html>

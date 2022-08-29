@@ -1,0 +1,454 @@
+body {
+    
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+    
+}
+p {
+    margin: 0;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 94%}
+    50%{background-position:100% 7%}
+    100%{background-position:0% 94%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 94%}
+    50%{background-position:100% 7%}
+    100%{background-position:0% 94%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 94%}
+    50%{background-position:100% 7%}
+    100%{background-position:0% 94%}
+}
+
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/noto-sans-v27-latin-500.woff2') format('woff2'),
+    url('../fonts/noto-sans-v27-latin-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/rubik-v21-latin-regular.woff2') format('woff2'),
+    url('../fonts/rubik-v21-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/rubik-v21-latin-500.woff2') format('woff2'),
+    url('../fonts/rubik-v21-latin-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/dancing-script-v24-latin-regular.woff2') format('woff2'),
+    url('../fonts/dancing-script-v24-latin-regular.woff') format('woff');
+}
+
+body {
+    font-family:  'Noto Sans' , 'Rubik' , 'Dancing Script';
+    background-color: #e5e5e545;
+}
+
+.container_all {
+    max-width: 1259px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_conatiner {
+    display: flex;
+    align-items: center;
+    padding: 10px 40px 10px 20px;
+}
+
+.header__mode-btn {
+    display: flex;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.header__mode-moon {
+    display: none;
+}
+
+.logo_link {
+    margin-right: 56px;
+}
+
+.search {
+    background: #F8FAFD;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    height: 48px;
+    margin-right: 224px;
+    width: 655px;
+}
+
+.search_logo_wrapper {
+    background: #F8FAFD;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.search_input {
+    border-radius: 30px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.result_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 306px;
+    padding-right: 41px;
+}
+
+.result_text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 606px;
+    margin-top: 9.5px;
+}
+
+.order_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order_text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.books_left {
+    max-width: 268px;
+    width: 100%;
+    padding-top: 25px;
+    padding-right: 25px;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bookmark_wrapper {
+    padding-left: 10px;
+}
+
+.bookmark_wrapper_list {
+    padding-left: 10px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.books_right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    padding-left: 39px;
+    margin-top: 40px;
+}
+
+.bookmark {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+
+.saved_books_edit_btn {
+    padding: 0;
+    border: 0;
+}
+
+.bookmark_edit {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 155.6%;
+    margin-bottom: 25px;
+    width: 218px;
+}
+
+.saved {
+    padding: 15px 10px;
+}
+
+.saved_books_info {
+    margin-right: 42px;
+}
+
+.book_card {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border: 0;
+}
+
+.book_title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 5px;
+}
+
+.card-body {
+    justify-content: space-between;
+}
+
+.book_author {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #757881;
+    margin: 0;
+}
+
+.bookmarks_title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 5px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.bookmarks_author {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #757881;
+    margin: 0;
+    max-width: 200px;
+    width: 100%;
+}
+
+.book_year {
+    margin-bottom: 10px;
+}
+
+.saved_books_edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.book_img_temp {
+    padding: 30px 35px;
+    width: 270px;
+    height: 300px;
+}
+
+.dark_mode_moon {
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+.dark_mode_sun {
+    width: 24px;
+    height: 24px;
+    display: flex;
+}
+
+.active main {
+    background: rgb(64, 69, 74);
+}
+
+.active header {
+    background: rgb(64, 69, 74);
+}
+
+.active {
+    background: rgb(64, 69, 74);
+}
+
+.active .header__mode-sun {
+    display: none;
+}
+
+.active p{
+    color: white;
+}
+
+.active .books_left {
+    background-color: rgb(74, 86, 98);
+}
+
+
+
+.active h2 , h3{
+    color: white;
+}
+
+.active h3{
+    color: white;
+}
+
+.logo__night {
+    display: none;
+}
+
+.active .book_card {
+    background-color: rgb(74, 86, 98);
+    
+    padding-bottom: 25px;
+}
+
+.active .modal {
+    background: #171f36;
+}
+
+.active .modal__end  {
+    background: #171f36;
+}
+
+.active .modal__heading-wrapper {
+    background: #171f36;
+}
+
+.active .header__mode-moon {
+    display: flex;
+} 
+
+.active .dark_mode_moon {
+    display: flex;
+}
+
+.active .dark_mode_sun {
+    display: none;
+}
+.active .dark_mode_moon {
+    display: flex;
+}
+
+.active .dark_mode_sun {
+    display: none;
+}
+
+.logo_moon {
+    display: none;
+}
+
+.active .logo_moon{
+    display: flex;
+}
+
+.active .logo_sun {
+    display: none;
+}
+
+.modal__middle {
+    padding: 45px 35px 0 45px;
+}
+
+.modal__bottom {
+    padding: 45px 35px 0 45px;
+}
+
+.modal__img {
+    width: 230px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    object-fit: contain;
+    margin-bottom: 51.26px;
+}
+
+.modal__info {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 170.3%;
+    color: #58667E;
+}
+
+.modal__author_wrapper {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.modal__author {
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222531;
+}
+
+.modal__atr_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    gap: 7px;
+}
+
+.modal__bottom_atr {
+    padding: 6px 13.58px 4.25px 13.59px;
+    background: rgba(13, 117, 255, 0.09);
+    border-radius: 30px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0D75FF;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal__end {
+    padding-left: 230px;
+}
+
+.modal__read_btn{
+    padding: 9px 38px 9px 39px;
+}
